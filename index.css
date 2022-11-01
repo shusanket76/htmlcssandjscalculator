@@ -1,0 +1,77 @@
+:root {
+  --off-col: rgb(70, 65, 65);
+}
+
+body {
+  background-color: black;
+  display: grid;
+}
+
+.on {
+  max-width: 30%;
+  margin-left: 15rem;
+  margin-top: 2rem;
+  font-size: 4.5vh;
+  background-color: darksalmon;
+  border-radius: 3%;
+  height: 8rem;
+}
+.maincontainer {
+  display: grid;
+  width: 30%;
+  margin-top: 4rem;
+  margin-left: 15rem;
+  border: 9px solid var(--off-col);
+  height: fit-content;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  height: fit-content;
+}
+
+.result {
+  background-color: var(--off-col);
+  height: 6rem;
+  font-size: 3rem;
+  padding: 0.5rem;
+  word-break: break-word;
+}
+
+.button {
+  background-color: black;
+  color: var(--off-col);
+  border: 2px solid var(--off-col);
+  font-size: 2rem;
+  padding: 0.5px;
+  height: 5rem;
+}
+
+.button:hover {
+  background-color: var(--off-col);
+  color: black;
+}
+
+.off {
+  background-color: darkcyan;
+}
+
+.hide {
+  display: none;
+}
+
+.on:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+  .on {
+    margin-left: 1rem;
+    min-width: 80%;
+  }
+  .maincontainer {
+    min-width: 80%;
+    margin-left: 1rem;
+  }
+}
